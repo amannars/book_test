@@ -1,5 +1,5 @@
 project:
-  type: website
+  type: book
 
 book:
   title: "i_optimal_book"
@@ -9,6 +9,9 @@ book:
     - 05_preface.qmd
     - 10_intro_to_r.qmd  
     - references.qmd
+  sidebar:
+    style: docked
+    search: true
 
 bibliography: references.bib
 
@@ -17,6 +20,3 @@ format:
     theme: cosmo
   pdf:
     documentclass: scrreprt
-
-editor: visual
-
