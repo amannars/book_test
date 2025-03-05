@@ -1,0 +1,22 @@
+project:
+  type: website
+
+book:
+  title: "i_optimal_book"
+  author: "Stu and Company"
+  date: "3/2/2025"
+  chapters:
+    - 05_preface.qmd
+    - 10_intro_to_r.qmd  
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+
