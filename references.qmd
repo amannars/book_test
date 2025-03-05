@@ -1,4 +1,4 @@
-# [@mannarswamy2010a]References {.unnumbered}
+# References {.unnumbered}
 
-::: {#refs}
+::: @mannarswamy2010a
 :::
