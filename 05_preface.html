@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index</title>
+<title>preface</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -83,108 +117,77 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="preface" class="level1 unnumbered">
-<h1 class="unnumbered">Preface</h1>
-<p><strong>I-optimal Design of Experiments Using R</strong></p>
-<ol type="1">
-<li><p>Preface</p></li>
-<li><p>A Short Introduction to R</p>
-<ol type="1">
-<li><p>R, R Studio, and user-written libraries</p></li>
-<li><p>Data types</p></li>
-<li><p>Reading and writing data</p></li>
-<li><p>Operations with vectors and matrices</p></li>
-<li><p>Logical operators</p></li>
-<li><p>Base R graphics</p></li>
-<li><p>Selected R libraries (plot3D, mix.DOE, and the optimization one)</p></li>
-</ol></li>
-<li><p>Response Surface Models</p>
-<ol type="1">
-<li><p>Amount models (Cartesian space)</p></li>
-<li><p>Mixture models (Simplex space)</p></li>
-<li><p>Mixture-amount models (Combined space)</p></li>
-<li><p>Mixture-process models (Combined space)</p></li>
-<li><p>Mixture-amount-process models (Combined space)</p></li>
-</ol></li>
-<li><p>Constructing I-optimal Designs</p>
-<ol type="1">
-<li><p>Point optimization</p>
-<ol type="1">
-<li><p>Weighting matrix construction</p></li>
-<li><p>Space matrix construction</p></li>
-<li><p>Point selection and optimization</p></li>
-</ol></li>
-<li><p>Pick-and-exchange algorithms</p></li>
-<li><p>Design visualization using R</p></li>
-</ol></li>
-<li><p>Experiments in 2-D Cartesian Space</p>
-<ol type="1">
-<li><p>Unconstrained spaces</p></li>
-<li><p>Constrained spaces</p></li>
-</ol></li>
-<li><p>Experiments in 3-D Cartesian Space</p>
-<ol type="1">
-<li><p>Unconstrained spaces</p></li>
-<li><p>Constrained spaces</p></li>
-</ol></li>
-<li><p>Experiments in 4-D and Higher Cartesian Spaces</p>
-<ol type="1">
-<li><p>Unconstrained spaces</p></li>
-<li><p>Constrained spaces</p></li>
-</ol></li>
-<li><p>3-Component Mixtures</p>
-<ol type="1">
-<li><p>Unconstrained spaces</p></li>
-<li><p>Constrained spaces</p></li>
-</ol></li>
-<li><p>4-Component Mixtures</p>
-<ol type="1">
-<li><p>Unconstrained spaces</p></li>
-<li><p>Constrained spaces</p></li>
-</ol></li>
-<li><p>5-Component and Higher Mixtures</p>
-<ol type="1">
-<li><p>Unconstrained spaces</p></li>
-<li><p>Constrained spaces</p></li>
-</ol></li>
-<li><p>Mixture Experiments in the Complete Simplex</p>
-<ol type="1">
-<li><p>3-component mixtures</p></li>
-<li><p>4-component mixtures</p></li>
-<li><p>5- and higher component mixtures</p></li>
-</ol></li>
-<li><p>Mixture Experiments in the Constrained Simplex</p>
-<ol type="1">
-<li><p>3-component mixtures</p></li>
-<li><p>4-component mixtures</p></li>
-<li><p>5- and higher component mixtures&nbsp;</p></li>
-<li><p>Design construction using R&nbsp;</p>
-<ol type="1">
-<li><p>Point optimization</p></li>
-<li><p>Pick-and-exchange</p></li>
-</ol></li>
-<li><p>Design visualization using R&nbsp;</p></li>
-</ol></li>
-<li><p>Mixture-Amount Experiments</p>
-<ol type="1">
-<li><p>3-component mixture-amount experiments</p></li>
-<li><p>4-component mixture-amount experiments</p></li>
-<li><p>5- and higher component mixture-amount experiments&nbsp;</p></li>
-<li><p>Design construction using R&nbsp;</p>
-<ol type="1">
-<li><p>Point optimization</p></li>
-<li><p>Pick-and-exchange</p></li>
-</ol></li>
-<li><p>Design visualization using R</p></li>
-</ol></li>
-<li><p>Constrained Mixture-Amount Experiments</p></li>
-<li><p>Mixture-Processing Experiments</p></li>
-<li><p>Mixture-Amount-Processing Experiments</p></li>
-<li><p>Designs using Non-linear Response Surface Models</p></li>
-</ol>
-<p>Appendix 1 – Design Visualization Using ggplot</p>
+<section id="introduction-to-design-of-experiments-and-optimal-design" class="level1">
+<h1>Introduction to Design of Experiments and Optimal Design</h1>
+<section id="overview-of-design-of-experiments-doe-and-optimality" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-design-of-experiments-doe-and-optimality">Overview of Design of Experiments (DOE) and Optimality</h2>
+<section id="importance-of-doe-in-statistical-modeling" class="level3">
+<h3 class="anchored" data-anchor-id="importance-of-doe-in-statistical-modeling">Importance of DOE in Statistical Modeling</h3>
+<p>Design of Experiments (DOE) is a structured approach for planning experiments to efficiently explore the relationship between factors and responses. By strategically choosing experimental runs, DOE enables precise estimation of model parameters and reliable predictions. Optimal design theory extends DOE by selecting runs that maximize information or minimize variance according to a chosen criterion. This approach is crucial when experiments are costly or time-consuming, as it seeks to extract the most information from limited runs.</p>
+</section>
+<section id="optimal-design-criteria-focus-on-i-optimality" class="level3">
+<h3 class="anchored" data-anchor-id="optimal-design-criteria-focus-on-i-optimality">Optimal Design Criteria – Focus on I-Optimality</h3>
+<p>Optimal designs are characterized by criteria like <strong>D-optimality, A-optimality, and I-optimality</strong>, each targeting a different aspect of estimation precision. I-optimality (also known as V-optimality) is especially relevant when the goal is accurate prediction across the design space. An I-optimal design minimizes the average prediction variance over the experimental region, which means it provides more uniform precision for predicted responses at all points in the design space.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 51%">
+<col style="width: 18%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Criterion</th>
+<th>Optimization Goal</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>D-Optimality</td>
+<td>Maximizes det(X′X)</td>
+<td>Overall parameter estimate precision</td>
+</tr>
+<tr class="even">
+<td>A-Optimality</td>
+<td>Minimizes trace((X′X)^(-1))</td>
+<td>Average variance of parameter estimates</td>
+</tr>
+<tr class="odd">
+<td>I-Optimality</td>
+<td>Minimizes integrated variance of predictions</td>
+<td>Prediction accuracy across factor space</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="setting-the-stage-doe-in-r-and-the-tidyverse" class="level2">
+<h2 class="anchored" data-anchor-id="setting-the-stage-doe-in-r-and-the-tidyverse">Setting the Stage: DOE in R and the Tidyverse</h2>
+<section id="r-environment-for-experimental-design" class="level3">
+<h3 class="anchored" data-anchor-id="r-environment-for-experimental-design">R Environment for Experimental Design</h3>
+<p>R provides a rich ecosystem for DOE, including packages for classical designs and algorithmic optimal design. Packages like AlgDesign and skpr offer functions to generate D-, I-, and other optimal designs, evaluate their statistical properties, and visualize design efficiency.</p>
+</section>
+<section id="leveraging-the-tidyverse-for-data-and-design-management" class="level3">
+<h3 class="anchored" data-anchor-id="leveraging-the-tidyverse-for-data-and-design-management">Leveraging the Tidyverse for Data and Design Management</h3>
+<p>The tidyverse set of packages integrates well with DOE tasks by simplifying data manipulation and visualization. In the context of optimal design, tidyverse tools can be used to:</p>
+<ul>
+<li>Define candidate sets of experimental runs</li>
+<li>Filter or modify candidate points based on practical constraints</li>
+<li>Examine and visualize designs</li>
+</ul>
+<p>Example of creating a candidate set using tidyverse functions:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Define candidate set for 2 factors (x1, x2 each in {-1,0,1})</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>candidate_set <span class="ot">&lt;-</span> <span class="fu">expand.grid</span>(<span class="at">x1 =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>), <span class="at">x2 =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">1</span>))</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(candidate_set)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This tibble of candidates can then be fed into optimal design algorithms in R. The tidyverse thus helps maintain clarity and efficiency in managing DOE data, which becomes increasingly important as the number of factors and candidate runs grows.</p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
