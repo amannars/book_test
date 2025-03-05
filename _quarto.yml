@@ -1,8 +1,9 @@
 project:
   type: book
+  
 
 book:
-  title: "i_optimal_book"
+  title: "I Optimal Designs for Experiments in R"
   author: "Stu and Company"
   date: "3/2/2025"
   chapters:
@@ -19,5 +20,7 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
+    css: styles.css
+    toc: true
   pdf:
     documentclass: scrreprt
