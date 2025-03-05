@@ -118,15 +118,5 @@
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>A Short Introduction to R</span>"
     ]
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "3  References",
-    "section": "",
-    "text": "(Mannarswamy et al. 2010)\n\n\n\n\nMannarswamy, Aravind, Stuart H. Munson-McGee, Robert Steiner, and Charles L. Johnson. 2010. “Optimal Designs for Constant-Heating-Rate Differential Scanning Calorimetry Experiments for Polymerization Kinetics:nth-Order Kinetics.” Journal of Applied Polymer Science 117 (4): 2133–39. https://doi.org/10.1002/app.31406.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>References</span>"
-    ]
   }
 ]
